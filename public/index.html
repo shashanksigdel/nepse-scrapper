@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEPSE API</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+      }
+      a {
+          display: block;
+          margin: 10px;
+          color: #1a73e8;
+          text-decoration: none;
+      }
+      a:hover {
+          text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the NEPSE API.</h1>
+    <h2>API Endpoints:</h2>
+    <a href="/api/live-market" target="_blank">/api/live-market</a>
+    <a href="/api/top-10-gainers" target="_blank">/api/top-10-gainers</a>
+    <a href="/api/top-10-losers" target="_blank">/api/top-10-losers</a>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top 10 Stocks</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="nepse">
+      <h1>Welcome to the NEPSE API.</h1>
+      <h2>API Endpoints:</h2>
+      <a href="/api/live-market" target="_blank">/api/live-market</a>
+      <br />
+      <a href="/api/top-10-gainers" target="_blank">/api/top-10-gainers</a>
+      <br />
+      <a href="/api/top-10-losers" target="_blank">/api/top-10-losers</a>
+    </div>
+    <h1>Top 10 Stocks</h1>
+    <div class="container">
+      <div class="table-container green">
+        <h2>Top 10 Gainers</h2>
+        <table id="gainers-table">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Symbol</th>
+              <th>LTP</th>
+              <th>Point Change</th>
+              <th>% Change</th>
+              <th>Open</th>
+              <th>High</th>
+              <th>Low</th>
+              <th>Volume</th>
+              <th>Prev. Close</th>
+            </tr>
+          </thead>
+          <tbody id="gainers-body">
+            <!-- Data will be inserted here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="table-container red">
+        <h2>Top 10 Losers</h2>
+        <table id="losers-table">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Symbol</th>
+              <th>LTP</th>
+              <th>Point Change</th>
+              <th>% Change</th>
+              <th>Open</th>
+              <th>High</th>
+              <th>Low</th>
+              <th>Volume</th>
+              <th>Prev. Close</th>
+            </tr>
+          </thead>
+          <tbody id="losers-body">
+            <!-- Data will be inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="/scripts.js"></script>
+  </body>
+</html>
